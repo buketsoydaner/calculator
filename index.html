@@ -1,0 +1,79 @@
+<html>
+<head>
+<style>
+table, th, td,button {
+  border: 3px solid black;
+  border-radius: 10px;
+}
+#ekran{
+  text-align: right;          
+}
+</style>
+<script>
+    function s(v) { document.getElementById('ekran').value = v }
+    function a(v) { document.getElementById('ekran').value += v }
+    function e() { try { s(eval(document.getElementById('ekran').value)) } catch(e) { s('Error') } }       
+</script>
+
+
+</head>
+<body>
+<table style="width:40%">
+  <tr>
+    <th colspan="4">HESAP MAKİNESİ</th>
+  </tr>
+   <th colspan="3"><box><input type="text" name="ekran" id="ekran" //class="sonuc"// value=""></box></th>
+    <th><button type="button" onclick="s('')">C</button>
+  <tr>
+    <th><button type="button" onclick="a('1')">1</button>
+    <th><button type="button" onclick="a('2')">2</button>
+    <th><button type="button" onclick="a('3')">3</button>
+   <th><button type="button" onclick="a('/')">/</button>
+    </tr>
+     <tr>
+    <th><button type="button" onclick="a('4')">4</button>
+    <th><button type="button" onclick="a('5')">5</button>
+    <th><button type="button" onclick="a('6')">6</button>
+   <th><button type="button" onclick="a('-')">-</button>
+    </tr>
+     <tr>
+    <th><button type="button" onclick="a('7')">7</button>
+    <th><button type="button" onclick="a('8')">8</button>
+    <th><button type="button" onclick="a('9')">9</button>
+    <th><button type="button" onclick="a('+')">+</button>
+    </tr>
+     <tr>
+    <th><button type="button" onclick="a('.')">.</button>
+    <th><button type="button" onclick="a('0')">0</button>
+    <th><button type="button" onclick="e('')">=</button>
+   <th><button type="button" onclick="a('*')">*</button>
+    </tr>
+    
+</table>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
